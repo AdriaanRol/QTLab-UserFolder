@@ -21,8 +21,4 @@ IF EXIST c:\python26\python.exe (
 :mark1
 
 :: Run QTlab GUI
-start %PYTHON_PATH%\pythonw.exe %PYTHON_PATH%/site-packages/qtlab/clients/client_gtk.py --module gui_client --config gui_client.cfg %*
-:: FIXME: Change to pip installed path for python modules
-
-:: Use this for easier debugging
-:: start %PYTHON_PATH%\python.exe clients/client_gtk.py --module gui_client --config gui_client.cfg %*
+start %PYTHON_PATH%\pythonw.exe %PYTHON_PATH%/lib/site-packages/qtlab/clients/client_gtk.py --module gui_client --config gui_client.cfg %*
